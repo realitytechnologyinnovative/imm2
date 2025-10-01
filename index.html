@@ -9,6 +9,15 @@
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="Imm Property Initiative Global Limited is Nigeria's premier construction and real estate company, delivering property development, building construction, borehole drilling, interior design, and facility maintenance across Lagos, Abuja, Port Harcourt, and nationwide.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Force HTTPS -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script>
+        // Force HTTPS redirect
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+            location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+        }
+    </script>
 
     <!-- Place favicon.png in the root directory -->
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
